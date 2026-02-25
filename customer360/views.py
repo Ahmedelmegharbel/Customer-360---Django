@@ -3,6 +3,7 @@ from datetime import date, timedelta
 from django.db.models import Count
 from .models import *
 
+
 def index(request):
     customers = Customer.objects.all()
     context = {"customers": customers}
